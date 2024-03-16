@@ -52,7 +52,7 @@ void sortKartu(char *kartu, int *kartuAngka, int jumlah) {
       // pada iterasi saat ini juga, kalau menggunakan ++ di akhir maka jumlahTukar ditambahkan di iterasi berikutnya
       printf("Pertukaran ke-%d: ", ++jumlahTukar);
       for (int i = 0; i < jumlah; i++) {
-        // Cek apakah isi dari kartu tersebut adalah 10 karena diantara semua pilihan kartu, hanya angka 10 yang 2 digit
+        // Cek apakah isi dari kartu tersebut adalah 10 karena diantara semua pilihan kartu hanya angka 10 yang 2 digit
         if (kartuAngka[i] == 10) {
           printf("%d ", kartuAngka[i]);
         } else {
