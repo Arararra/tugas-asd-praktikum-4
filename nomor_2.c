@@ -15,10 +15,10 @@ void kemungkinanPindah(int baris, int kolom, int *papan) {
 
     // Cek apakah posisi kemungkinan bidak kuda yang baru masih berada di dalam papan 8x8, jika iya maka nilainya diubah menjadi 1
     if (kemungkinanX >= 0 && kemungkinanX < 8 && kemungkinanY >= 0 && kemungkinanY < 8) {
-      // Parameter papan berisi alamat pertama dari array papan 8x8, disini kita membaca array papan 2 dimensi menjadi 1 dimensi
+      // Parameter papan berisi alamat pertama dari array papan 8x8, disini kita membaca array papan 2 dimensi sebagai 1 dimensi
       // dengan rumus "(baris yang dicari * jumlah kolom) + kolom yang dicari" sehingga jika posisi kuda adalah baris 2 kolom 2,
       // maka kemungkinan pertamanya berada pada index "(4 * 8) + 3 = 35" yang dimana index 35 dalam array papan 8x8 adalah [4][3]
-      // yang nilainya akan diubah menjadi angka 1
+      // yang nilainya kemudian akan diubah menjadi angka 1
       papan[(kemungkinanX * 8) + kemungkinanY] = 1;
     }
   }
