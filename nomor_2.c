@@ -19,7 +19,7 @@ void koboImaginaryChess(int baris, int kolom, int size, int *papan) {
       // dengan rumus "(baris yang dicari * jumlah kolom) + kolom yang dicari" sehingga jika posisi kuda adalah baris 2 kolom 2,
       // maka kemungkinan pertamanya berada pada index "(4 * 8) + 3 = 35" yang dimana index 35 dalam array papan 8x8 adalah [4][3]
       // yang nilainya kemudian akan diubah menjadi angka 1
-      papan[(kemungkinanX * 8) + kemungkinanY] = 1;
+      papan[(kemungkinanX * size) + kemungkinanY] = 1;
     }
   }
 }
